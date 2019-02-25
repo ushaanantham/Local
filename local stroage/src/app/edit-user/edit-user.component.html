@@ -1,0 +1,23 @@
+<div class="container">
+    <mat-card>
+      <mat-card-title> Update USER</mat-card-title>
+    <mat-card-content>
+       <form [formGroup]="editForm" (ngSubmit)="onsubmit()">
+       <mat-form-field class="example-full-width">
+                  
+           <input  matInput placeholder="Firstname" name="firstname" formControlName="firstname" id="fn" >
+           </mat-form-field>
+           <mat-form-field class="example-full-width">
+                  
+               <input  matInput placeholder="Lastname" name="lastname" formControlName="lastname" id="ln" >
+               </mat-form-field>
+               <mat-form-field class="example-full-width">
+                  
+                   <input  matInput placeholder="Email" name="email" formControlName="email" id="em" >
+                   </mat-form-field>
+                   <button class="btn btn-success"> Save</button>
+                   </form>
+ 
+    </mat-card-content>
+    </mat-card>
+    </div>

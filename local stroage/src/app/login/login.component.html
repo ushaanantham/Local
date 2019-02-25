@@ -1,0 +1,41 @@
+ 
+<div class="container">
+  <div style="text-align:center"><strong>USER ACCOUNT</strong></div>
+  
+  <mat-card > 
+       <mat-card-header [style.backgroundColor]="'pink'"> 
+        <mat-card-title > <strong> LOGIN FORM</strong> </mat-card-title>
+     </mat-card-header>
+
+     <mat-card-content> 
+      <form class="form-horizontal" #loginForm="ngForm">
+        <div class="form-group">
+            <label for="username" class="col-sm-3 col-sm-offset-1 control-label">User Name</label>
+            <div class="col-sm-4 col-sm-offset-1 inputWithIcon">
+              <input type="text"  class="form-control" name="username" placeholder="User Name" [(ngModel)]="username" required>
+              <i class="glyphicon glyphicon-user"></i>
+                    </div>
+             <!-- <div class="inputWithIcon">
+              <input type="text" placeholder="Your name">
+              <i class="glyphicon glyphicon-user"></i>
+            </div> -->
+        </div>
+        <div class="form-group">
+            <label for="password" class="col-sm-3 col-sm-offset-1 control-label">Password</label>
+            <div class="col-sm-4 col-sm-offset-1">
+              <input type="password" class="form-control" name="Password" placeholder="Password" [(ngModel)]="Password" required>
+            </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-primary" [disabled]="!loginForm.form.valid" (click)="login()">Login</button>
+          </div>
+        </div>
+      </form>
+    
+    
+    </mat-card-content>
+ 
+</mat-card>
+</div>
+ 
